@@ -223,6 +223,6 @@ public class TimerFragment extends Fragment implements ClockFragment {
     }
 
     private void notifyElapsedTime() {
-        Toast.makeText(getContext(), "timer elapsed", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(), R.string.mes_timer_elapsed, Toast.LENGTH_SHORT).show();
     }
 }

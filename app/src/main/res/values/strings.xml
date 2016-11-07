@@ -9,9 +9,8 @@
     <string name="timer">Timer\n(hours/minutes/seconds)</string>
     <string name="gps">GPS</string>
 
-    <!--stopper-->
     <string name="err_mes_is_running">Is running!</string>
-
+    <string name="mes_timer_elapsed">Timer elapsed</string>
     <string name="gps_locaton_text" formatted="false">My location\n%f.%f</string>
 
 </resources>
