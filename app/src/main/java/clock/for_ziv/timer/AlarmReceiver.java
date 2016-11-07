@@ -5,7 +5,6 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
 
@@ -21,9 +20,8 @@ public class AlarmReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Intent mainActivityIntent = new Intent(context, MainActivity.class);
-        Bundle args = new Bundle();
-        args.putInt(MainActivity.KEY_CURRENT_MODE, MainActivity.MODE_TIMER);
-        PendingIntent activity = PendingIntent.getActivity(context, REQUEST_CODE, mainActivityIntent, PendingIntent.FLAG_UPDATE_CURRENT, args);
+        mainActivityIntent.putExtra(MainActivity.KEY_CURRENT_MODE, MainActivity.MODE_TIMER);
+        PendingIntent activity = PendingIntent.getActivity(context, REQUEST_CODE, mainActivityIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         Notification notification = new NotificationCompat.Builder(context)
                 .setContentTitle("Hey Dude")
                 .setContentText("Timer elapsed")
