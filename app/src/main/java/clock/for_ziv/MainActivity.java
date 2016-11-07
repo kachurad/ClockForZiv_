@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         fm.beginTransaction()
+                .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
                 .replace(R.id.container, fragment, getTagForMode(mode))
                 .commit();
         if (fragment instanceof ClockFragment)
