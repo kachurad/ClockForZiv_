@@ -78,7 +78,7 @@ public class StopperFragment extends Fragment implements ClockFragment {
             baseValue = 0;
         }
         if (stopValue > now) {
-            baseValue = 0;
+            stopValue = 0;
         }
     }
 
