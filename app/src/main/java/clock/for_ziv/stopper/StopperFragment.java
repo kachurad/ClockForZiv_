@@ -131,6 +131,7 @@ public class StopperFragment extends Fragment implements ClockFragment {
     public void stop() {
         if (isRunning) {
             stopValue = SystemClock.elapsedRealtime();
+            updateStopWatchValue();
             stopUpdating();
             isRunning = false;
             saveState();
