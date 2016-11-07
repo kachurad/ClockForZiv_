@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ClockForZiv</string>
+
+    <string name="mode">Mode</string>
+    <string name="set">Set</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="stopper">Stopper</string>
+    <string name="timer">Timer\n(hours/minutes/seconds)</string>
+    <string name="gps">GPS</string>
+
+    <!--stopper-->
+    <string name="err_mes_is_running">Is running!</string>
+
+    <string name="gps_locaton_text" formatted="false">My location\n%f.%f</string>
+
+</resources>
